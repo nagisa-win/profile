@@ -61,8 +61,22 @@ npm run setup          # 启用 pre-commit 钩子（克隆后执行一次）
 
 ## 发布
 
-- **GitHub Pages**：仓库 Settings → Pages → Source 选 GitHub Actions，推送到 `main` 后自动部署 `dist/public`。
-- **POPO**：执行 `npm run build:internal`，把 `dist/internal` 作为发布目录，入口 `index.html`。
+### GitHub Pages
+
+首次公开部署时，在仓库 **Settings → Pages → Source** 中选择 **GitHub Actions**。推送 `main` 或 `master` 后，**Deploy to GitHub Pages** 流水线会自动执行提交检查和公开版构建，并只发布 `dist/public`。
+
+发布前可本地执行同一组检查：
+
+```bash
+npm run check
+npm run build:public
+```
+
+发布产物不包含 `profile.private.mjs`、`assets.private/` 或 `dist/internal`。在 **Actions** 中可以查看检查与部署结果，在 **Settings → Pages** 中可以确认公开访问地址。
+
+### POPO
+
+执行 `npm run build:internal`，把 `dist/internal` 作为发布目录，入口 `index.html`。内网版只发布到公司 POPO，不进入 GitHub Pages。
 
 ## 目录
 
@@ -82,3 +96,7 @@ dist/        构建产物（不入库）
 ## 备份提醒
 
 私密文件只存在本机，没有远程副本。换电脑或重装前请自行备份 `src/content/profile.private.mjs` 和 `src/assets.private/`。
+
+## 许可证
+
+代码使用 [MIT License](LICENSE)。第三方图片、GIF、视频等素材的原始权利仍归各自权利人，MIT 许可证不扩展对这些素材的授权。

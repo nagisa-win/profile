@@ -64,7 +64,7 @@ export default {
     left: {
       title: "CLASS PERKS · 职业标签",
       tags: ["100°C 魔法AI鼓励师", "前端魔法少女", "AnyScript 填坑大师"],
-      meters: [["REACT.SYS", "LV.MAX", 96], ["ANYSCRIPT", "∞", 100], ["BUG.REPELLENT", "不稳定", 62]],
+      meters: [["AI.HARNESS", "LV.MAX", 90], ["ANYSCRIPT", "∞", 100], ["BUG.REPELLENT", "不稳定", 62]],
     },
     right: {
       title: "PERSONALITY CHIP · 性格标签",
