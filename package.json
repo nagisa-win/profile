@@ -1,0 +1,19 @@
+{
+  "name": "nagisa-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cyberpunk 2077 风格个人主页：同一份源码构建公开版与内网版",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs all",
+    "build:public": "node scripts/build.mjs public",
+    "build:internal": "node scripts/build.mjs internal",
+    "dev": "node scripts/dev.mjs internal",
+    "dev:public": "node scripts/dev.mjs public",
+    "check": "node scripts/check.mjs",
+    "setup": "git config core.hooksPath .githooks"
+  }
+}

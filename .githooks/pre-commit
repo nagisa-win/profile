@@ -1,0 +1,3 @@
+#!/bin/sh
+# 提交前自动检查，启用方式：git config core.hooksPath .githooks（或 npm run setup）
+node scripts/check.mjs && node scripts/build.mjs public

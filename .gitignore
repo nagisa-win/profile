@@ -1,0 +1,26 @@
+# 内网 / 私密内容：只保存在本地，永远不入库
+src/content/profile.private.mjs
+src/assets.private/
+
+# 构建产物与原始素材
+dist/
+raw/
+*.log
+*.tmp
+*.swap
+
+# 环境与系统文件
+.env
+.env.*
+.DS_Store
+node_modules/
+*.log
+
+# Agent 文件
+.deepseek-harness
+.claude
+.codex
+.agent
+
+# 发布工具本地记录
+.popo.json

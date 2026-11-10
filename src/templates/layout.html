@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="icon" href="{{favicon}}">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/ui.css">
+<link rel="stylesheet" href="styles/fx.css">
+</head>
+<body>
+<div id="boot" aria-hidden="true">
+  <div class="logo">{{bootLogo}}</div>
+  <pre id="bootlog"></pre>
+  <div class="bar"><i id="bootbar"></i></div>
+  <div class="skip">[ 点击任意位置跳过 / CLICK TO SKIP ]</div>
+</div>
+<canvas id="rain"></canvas>
+<div class="grid-bg"></div>
+<div class="vignette"></div>
+<div class="scanlines"></div>
+<div id="cursor"></div>
+
+<header class="hud">
+  <div class="brand">{{brand}}</div>
+  <nav>{{nav}}</nav>
+  <div class="clock" id="clock">--:--:--</div>
+</header>
+
+<main>
+{{sections}}
+</main>
+{{footer}}
+<script src="scripts/main.js"></script>
+<script src="scripts/fx.js"></script>
+</body>
+</html>
