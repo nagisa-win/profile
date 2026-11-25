@@ -9,6 +9,22 @@
       "stars": 1
     },
     {
+      "repo": "advanced-js-calculator",
+      "desc": "用 Jison 写的表达式计算器，解析过程可视化",
+      "at": "2026-11-25",
+      "url": "https://github.com/nagisa-win/advanced-js-calculator",
+      "language": "JavaScript",
+      "stars": 0
+    },
+    {
+      "repo": "mermaid-render",
+      "desc": "Mermaid 代码即时出图，支持导出 PNG / JPG",
+      "at": "2026-11-25",
+      "url": "https://github.com/nagisa-win/mermaid-render",
+      "language": "TypeScript",
+      "stars": 1
+    },
+    {
       "repo": "mobile-photo-cleanup-kit",
       "desc": "Web 优先的安卓照片去重与缩略图清理，走 ADB",
       "at": "2026-11-17",
@@ -63,22 +79,6 @@
       "url": "https://github.com/nagisa-win/Rime-Pro-Dict",
       "language": "Vue",
       "stars": 0
-    },
-    {
-      "repo": "mermaid-render",
-      "desc": "Mermaid 代码即时出图，支持导出 PNG / JPG",
-      "at": "2026-04-21",
-      "url": "https://github.com/nagisa-win/mermaid-render",
-      "language": "TypeScript",
-      "stars": 1
-    },
-    {
-      "repo": "fanzha-skill",
-      "desc": "反诈技能包：给 agent 的防骗知识库与判断流程",
-      "at": "2026-04-14",
-      "url": "https://github.com/nagisa-win/fanzha-skill",
-      "language": "Shell",
-      "stars": 3
     }
   ],
   "releases": [
