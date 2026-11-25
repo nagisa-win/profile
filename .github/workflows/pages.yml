@@ -18,11 +18,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,11 +47,20 @@ jobs:
           git commit -m "chore(data): 同步公开仓库数据"
           git push
 
-      # CI 里没有 profile.private.mjs，只能构建公开版；同时执行提交内容检查
+      # CI 里没有 profile.private.mjs，只能构建公开版，并在构建前执行提交内容检查
       - run: node scripts/check.mjs
       - run: node scripts/build.mjs public
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/public
+
+  # 部署单独成 job：artifact 上传后需要一点时间才能被列出
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v4
