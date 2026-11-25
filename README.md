@@ -37,6 +37,22 @@ npm run setup          # 启用 pre-commit 钩子（克隆后执行一次）
 
 要求 Node 18+，没有 npm 依赖。
 
+## 开源档案（自动同步）
+
+页面上的 REPO 区块不手写，数据来自 `src/data/`：
+
+- `src/content/projects.config.mjs` — 白名单：展示哪些仓库、归到哪一类、写什么中文简介、有没有线上站。
+- `node scripts/sync-projects.mjs` — 读白名单，去 GitHub 拉 star / 语言 / 最近推送时间，生成 `src/data/projects.json` 与 `src/data/feed.json`。
+- `.github/workflows/pages.yml` — 每天北京时间 04:10 自动跑一次同步；数据有变化才提交，随后照常构建并部署。
+- 生成的文件同时发布到 `https://www.8o.nz/data/`，`8o.nz` 门户直接消费同一份数据，不需要第二套清单。
+
+本地想手动刷新：
+
+```bash
+export GITHUB_TOKEN=$(gh auth token)
+node scripts/sync-projects.mjs
+```
+
 ## 配图与访问统计
 
 - `about.entries[].art`：放在对应日志右侧的配图，支持一个图片对象或图片对象数组，未填写时自动恢复纯文字布局。
