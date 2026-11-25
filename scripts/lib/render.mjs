@@ -10,7 +10,7 @@ export const rich = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<em class="hl">$1</
 export const url = (u) => (/^(https?:|infoflow:|#|assets\/|mailto:)/i.test(String(u)) ? esc(u) : '#');
 
 /** 区块标题 */
-const head = (no, title, sub) =>
+export const head = (no, title, sub) =>
   `<div class="sec-head reveal"><span class="no">${no} //</span><h2>${esc(title)}</h2><span class="sub">${esc(sub)}</span></div>`;
 
 /** 内容区装饰图：支持一张或多张，保持图片与文字分开维护 */
@@ -62,7 +62,7 @@ export function stats(P) {
     return `<div class="panel"><div class="ptitle">${esc(p.title)}</div><div class="tags">${tags}</div><div class="meter">${meters}</div></div>`;
   };
   const breach = (S.breach || []).map((b) => `<div class="panel breach${b.danger ? ' danger' : ''}" data-facts="${esc(JSON.stringify(b.facts))}"><div class="ptitle">${esc(b.title)}</div><div class="hint">${esc(b.hint)}</div><button type="button">${esc(b.button)}</button><div class="prog"></div></div>`).join('');
-  return `<section id="stats">${head('03', S.title, S.sub)}<div class="stats reveal">${panel(S.left, '')}${panel(S.right, ' c')}</div>${breach ? `<div class="breach-wrap reveal">${breach}</div>` : ''}</section>`;
+  return `<section id="stats">${head('04', S.title, S.sub)}<div class="stats reveal">${panel(S.left, '')}${panel(S.right, ' c')}</div>${breach ? `<div class="breach-wrap reveal">${breach}</div>` : ''}</section>`;
 }
 
 /** 04 About me 日志 */
@@ -74,7 +74,7 @@ export function about(P) {
     const chips = e.chips ? `<div class="chip-row">${e.chips.map((c) => `<span class="tag">${esc(c)}</span>`).join('')}</div>` : '';
     return `<div class="entry panel${e.art ? ' has-art' : ''}"><div class="stamp">LOG_${String(i + 1).padStart(2, '0')}</div><div class="entry-body"><h3>${rich(e.head)}</h3>${body}${list}${chips}</div>${art(e.art)}</div>`;
   };
-  return `<section id="about">${head('04', A.title, A.sub)}
+  return `<section id="about">${head('05', A.title, A.sub)}
     <div class="panel reveal" style="margin-bottom:22px"><p class="quote">${esc(A.quote.text)}<small>${esc(A.quote.note)}</small></p></div>
     <div class="log reveal">${A.entries.map(entry).join('')}</div></section>`;
 }
@@ -83,5 +83,5 @@ export function about(P) {
 export function neuro(P) {
   const N = P.neuro;
   const list = N.branches.map((b) => `<li><span>${esc(b.text)}</span>${b.children.map(esc).join(' / ')}</li>`).join('');
-  return `<section id="neuro">${head('05', N.title, N.sub)}<div class="panel reveal"><div class="neuro" id="neuroMap"></div><ul class="facts neuro-list">${list}</ul></div></section>`;
+  return `<section id="neuro">${head('06', N.title, N.sub)}<div class="panel reveal"><div class="neuro" id="neuroMap"></div><ul class="facts neuro-list">${list}</ul></div></section>`;
 }

@@ -1,0 +1,135 @@
+{
+  "updated": [
+    {
+      "repo": "gold-board",
+      "desc": "macOS 桌面浮窗：金价走势、唤醒定时器、触控板震动提醒",
+      "at": "2026-11-25",
+      "url": "https://github.com/nagisa-win/gold-board",
+      "language": "Swift",
+      "stars": 1
+    },
+    {
+      "repo": "mobile-photo-cleanup-kit",
+      "desc": "Web 优先的安卓照片去重与缩略图清理，走 ADB",
+      "at": "2026-11-17",
+      "url": "https://github.com/nagisa-win/mobile-photo-cleanup-kit",
+      "language": "Python",
+      "stars": 0
+    },
+    {
+      "repo": "dsh-animal-island-theme",
+      "desc": "DeepSeek Harness 的动物岛风格主题",
+      "at": "2026-11-06",
+      "url": "https://github.com/nagisa-win/dsh-animal-island-theme",
+      "language": "CSS",
+      "stars": 0
+    },
+    {
+      "repo": "skkill",
+      "desc": "给所有 agent 用的技能管理器，拿 package.json 当版本控制",
+      "at": "2026-11-06",
+      "url": "https://github.com/nagisa-win/skkill",
+      "language": "TypeScript",
+      "stars": 2
+    },
+    {
+      "repo": "better-coloros",
+      "desc": "ColorOS 的 LSPosed 插件合集：缺什么功能自己写",
+      "at": "2026-11-02",
+      "url": "https://github.com/nagisa-win/better-coloros",
+      "language": "Kotlin",
+      "stars": 0
+    },
+    {
+      "repo": "oppo-camera-normalization",
+      "desc": "把 OPPO 相机的输出文件名规范化",
+      "at": "2026-10-27",
+      "url": "https://github.com/nagisa-win/oppo-camera-normalization",
+      "language": "Kotlin",
+      "stars": 0
+    },
+    {
+      "repo": "cli-tools",
+      "desc": "留下来的命令行脚本集合，bash 与 Python",
+      "at": "2026-06-24",
+      "url": "https://github.com/nagisa-win/cli-tools",
+      "language": "Shell",
+      "stars": 3
+    },
+    {
+      "repo": "Rime-Pro-Dict",
+      "desc": "自动生成 Rime 输入法的专业词库",
+      "at": "2026-06-01",
+      "url": "https://github.com/nagisa-win/Rime-Pro-Dict",
+      "language": "Vue",
+      "stars": 0
+    },
+    {
+      "repo": "mermaid-render",
+      "desc": "Mermaid 代码即时出图，支持导出 PNG / JPG",
+      "at": "2026-04-21",
+      "url": "https://github.com/nagisa-win/mermaid-render",
+      "language": "TypeScript",
+      "stars": 1
+    },
+    {
+      "repo": "fanzha-skill",
+      "desc": "反诈技能包：给 agent 的防骗知识库与判断流程",
+      "at": "2026-04-14",
+      "url": "https://github.com/nagisa-win/fanzha-skill",
+      "language": "Shell",
+      "stars": 3
+    }
+  ],
+  "releases": [
+    {
+      "repo": "gold-board",
+      "tag": "v1.0.1",
+      "name": "国内金价 v1.0.1",
+      "url": "https://github.com/nagisa-win/gold-board/releases/tag/v1.0.1",
+      "at": "2026-11-25"
+    },
+    {
+      "repo": "gold-board",
+      "tag": "v1.0.0",
+      "name": "国内金价 v1.0.0",
+      "url": "https://github.com/nagisa-win/gold-board/releases/tag/v1.0.0",
+      "at": "2026-11-24"
+    },
+    {
+      "repo": "better-coloros",
+      "tag": "v1.1.0",
+      "name": "Release v1.1.0",
+      "url": "https://github.com/nagisa-win/better-coloros/releases/tag/v1.1.0",
+      "at": "2026-11-02"
+    },
+    {
+      "repo": "oppo-camera-normalization",
+      "tag": "v1.0.0",
+      "name": "Release v1.0.0",
+      "url": "https://github.com/nagisa-win/oppo-camera-normalization/releases/tag/v1.0.0",
+      "at": "2026-10-27"
+    },
+    {
+      "repo": "oppo-camera-normalization",
+      "tag": "v1.0.1",
+      "name": "Release v1.0.1",
+      "url": "https://github.com/nagisa-win/oppo-camera-normalization/releases/tag/v1.0.1",
+      "at": "2026-10-27"
+    },
+    {
+      "repo": "better-coloros",
+      "tag": "v1.0.0",
+      "name": "Release v1.0.0",
+      "url": "https://github.com/nagisa-win/better-coloros/releases/tag/v1.0.0",
+      "at": "2026-10-27"
+    },
+    {
+      "repo": "better-coloros",
+      "tag": "v1.0.1",
+      "name": "Release v1.0.1",
+      "url": "https://github.com/nagisa-win/better-coloros/releases/tag/v1.0.1",
+      "at": "2026-10-27"
+    }
+  ]
+}

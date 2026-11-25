@@ -83,6 +83,14 @@
 .lnk .lock.open { border-color: var(--g); color: var(--g); }
 .lnk::after { content: "↗"; position: absolute; right: 18px; bottom: 12px; color: var(--y); font-size: 18px; transition: transform 0.2s; }
 .lnk:hover::after { transform: translate(3px, -3px); }
+
+/** 开源档案：复用链接卡片，补元数据行与整卡点击区（标题里的 LIVE 要能单独点） */
+.proj .t { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.proj .d { padding-right: 26px; }
+.proj .meta { display: flex; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(2, 215, 242, 0.18); font-family: var(--mono); font-size: 11px; color: var(--mute); letter-spacing: 0.12em; }
+.proj .meta .warn { color: var(--r); }
+.proj-live { position: relative; z-index: 2; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--g); border: 1px solid rgba(57, 255, 136, 0.5); padding: 2px 7px; }
+.proj-hit { position: absolute; inset: 0; z-index: 1; }
 .group-label { font-family: var(--mono); font-size: 13px; color: var(--y); letter-spacing: 0.3em; margin: 34px 0 14px; }
 .group-label:first-child { margin-top: 0; }
 

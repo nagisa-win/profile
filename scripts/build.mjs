@@ -6,6 +6,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { esc } from './lib/render.mjs';
 import * as A from './lib/render.mjs';
 import * as B from './lib/render-tail.mjs';
+import { projects as renderProjects } from './lib/render-projects.mjs';
 import { merge } from './lib/merge.mjs';
 import { checkLinks, scanLeaks } from './lib/guard.mjs';
 
@@ -18,6 +19,7 @@ export const TARGETS = ['public', 'internal'];
 const SECTIONS = [
   { key: 'hero', id: 'id', nav: 'ID', render: A.hero },
   { key: 'links', id: 'net', nav: 'NETWORK', render: A.links },
+  { key: 'projectsData', id: 'repo', nav: 'REPO', render: renderProjects },
   { key: 'stats', id: 'stats', nav: 'STATS', render: A.stats },
   { key: 'about', id: 'about', nav: 'LOG', render: A.about },
   { key: 'neuro', id: 'neuro', nav: 'NEURO', render: A.neuro },
@@ -46,6 +48,10 @@ export async function build(target) {
   const out = join(dist, target);
   const P = await loadProfile(target);
 
+  /** 仓库数据由 sync-projects.mjs 每夜生成；文件不存在时 REPO 区块自动隐藏 */
+  const projectsFile = join(src, 'data/projects.json');
+  if (existsSync(projectsFile)) P.projectsData = JSON.parse(await readFile(projectsFile, 'utf8'));
+
   await rm(out, { recursive: true, force: true });
   await mkdir(out, { recursive: true });
   await cp(join(src, 'assets'), join(out, 'assets'), { recursive: true });
@@ -54,6 +60,8 @@ export async function build(target) {
   if (target === 'internal' && existsSync(privAssets)) await cp(privAssets, join(out, 'assets'), { recursive: true });
   await cp(join(src, 'styles'), join(out, 'styles'), { recursive: true });
   await cp(join(src, 'scripts'), join(out, 'scripts'), { recursive: true });
+  /** 生成的 JSON 一并发布，门户与其它站点直接消费同一份数据 */
+  if (existsSync(join(src, 'data'))) await cp(join(src, 'data'), join(out, 'data'), { recursive: true });
 
   const active = SECTIONS.filter((s) => P[s.key]);
   const data = { typed: P.hero?.typed ?? [], neuro: P.neuro ?? null };

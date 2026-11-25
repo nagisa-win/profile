@@ -3,10 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main, master]
+  schedule:
+    # 每天 04:10（北京时间）同步一次公开仓库数据，避开工作时段
+    - cron: "10 20 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,6 +28,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      # 只有定时与手动触发才重新拉仓库数据；push 触发的部署保持确定性
+      - name: Sync public repos
+        if: github.event_name != 'push'
+        run: node scripts/sync-projects.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 数据没有变化就不产生提交，避免无意义的提交记录
+      - name: Commit synced data
+        if: github.event_name != 'push'
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "数据无变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "nagisa-win"
+          git config user.email "59007326+nagisa-win@users.noreply.github.com"
+          git add src/data/projects.json src/data/feed.json
+          git commit -m "chore(data): 同步公开仓库数据"
+          git push
+
       # CI 里没有 profile.private.mjs，只能构建公开版；同时执行提交内容检查
       - run: node scripts/check.mjs
       - run: node scripts/build.mjs public

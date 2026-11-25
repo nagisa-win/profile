@@ -12,14 +12,14 @@ export function media(P) {
   const embed = M.embed
     ? `<div class="embed-frame"><div class="embed-bar"><span><b>LIVE FEED</b> · ${esc(M.embed.label)}</span><a href="${url(M.embed.url)}" target="_blank" rel="noopener">在新窗口打开 ↗</a></div><iframe src="${url(M.embed.url)}" loading="lazy" title="${esc(M.embed.label)}" referrerpolicy="no-referrer"></iframe></div>`
     : '';
-  return `<section id="ride">${head('06', M.title, M.sub)}<div class="media reveal">${vid(first)}<div class="side-stack">${rest.map(vid).join('')}${embed}</div></div></section>`;
+  return `<section id="ride">${head('07', M.title, M.sub)}<div class="media reveal">${vid(first)}<div class="side-stack">${rest.map(vid).join('')}${embed}</div></div></section>`;
 }
 
 /** 07 联络终端，午休时段通过 data 属性交给前端脚本 */
 export function contact(P) {
   const C = P.contact;
   const lines = C.lines.map((l, i) => `<p class="ln${i === 0 ? ' warn' : ''}">&gt; ${esc(l)}</p>`).join('');
-  return `<section id="ping">${head('07', C.title, C.sub)}<div class="contact reveal">
+  return `<section id="ping">${head('08', C.title, C.sub)}<div class="contact reveal">
     <div class="panel terminal" data-nap-start="${+C.napStart}" data-nap-end="${+C.napEnd}">
       <div class="ptitle">AVAILABILITY.LOG</div>
       <img class="ok-gif" src="${url(C.okImage)}" alt="" loading="lazy">
@@ -56,7 +56,7 @@ export function community(P) {
   const one = (C.comments || []).map(([n, t]) => `<span><b>@${esc(n)}</b>${esc(t)}</span>`).join('');
   /** 没有配置原文档地址时（公开版），横幅不加链接 */
   const doc = P.meta.docUrl ? url(P.meta.docUrl) : '';
-  return `<section id="rep">${head('08', C.title, C.sub)}
+  return `<section id="rep">${head('09', C.title, C.sub)}
     ${telemetry(C.telemetry)}
     ${counters ? `<div class="counters reveal">${counters}</div>` : ''}
     ${one ? `<div class="ticker reveal" aria-label="评论精选"><div class="track">${one}${one}</div></div>` : ''}
