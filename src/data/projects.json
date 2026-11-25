@@ -17,7 +17,7 @@
         {
           "repo": "agent-relay",
           "desc": "自托管的中转站：不同人的 agent 之间交换请求，由接收方本人审核",
-          "live": "",
+          "live": "https://8o.nz/relay/",
           "stars": 0,
           "language": "Go",
           "updated": "2026-11-25",

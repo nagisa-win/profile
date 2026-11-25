@@ -15,7 +15,7 @@ export default {
       label: "AGENT 工具",
       items: [
         { repo: "skkill", desc: "给所有 agent 用的技能管理器，拿 package.json 当版本控制", live: "https://skills.8o.nz/" },
-        { repo: "agent-relay", desc: "自托管的中转站：不同人的 agent 之间交换请求，由接收方本人审核" },
+        { repo: "agent-relay", desc: "自托管的中转站：不同人的 agent 之间交换请求，由接收方本人审核", live: "https://8o.nz/relay/" },
         { repo: "fanzha-skill", desc: "反诈技能包：给 agent 的防骗知识库与判断流程" },
       ],
     },
