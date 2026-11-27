@@ -10,7 +10,7 @@
           "live": "https://skills.8o.nz/",
           "stars": 2,
           "language": "TypeScript",
-          "updated": "2026-11-25",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/skkill"
         },
@@ -30,7 +30,7 @@
           "live": "",
           "stars": 3,
           "language": "Shell",
-          "updated": "2026-04-14",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/fanzha-skill"
         }
@@ -45,7 +45,7 @@
           "live": "https://mermaid.8o.nz/",
           "stars": 1,
           "language": "TypeScript",
-          "updated": "2026-11-25",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/mermaid-render"
         },
@@ -55,7 +55,7 @@
           "live": "https://calc.8o.nz/",
           "stars": 0,
           "language": "JavaScript",
-          "updated": "2026-11-25",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/advanced-js-calculator"
         },
@@ -65,7 +65,7 @@
           "live": "",
           "stars": 3,
           "language": "JavaScript",
-          "updated": "2026-11-25",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/web-router"
         },
@@ -75,7 +75,7 @@
           "live": "",
           "stars": 3,
           "language": "Shell",
-          "updated": "2026-06-24",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/cli-tools"
         },
@@ -85,7 +85,7 @@
           "live": "",
           "stars": 0,
           "language": "JavaScript",
-          "updated": "2025-06-26",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/NB-Rename"
         },
@@ -130,7 +130,7 @@
           "live": "",
           "stars": 0,
           "language": "Kotlin",
-          "updated": "2026-11-02",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/better-coloros"
         },
@@ -155,7 +155,7 @@
           "live": "",
           "stars": 0,
           "language": "Vue",
-          "updated": "2026-06-01",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/Rime-Pro-Dict"
         },
@@ -163,7 +163,7 @@
           "repo": "dsh-animal-island-theme",
           "desc": "DeepSeek Harness 的动物岛风格主题",
           "live": "",
-          "stars": 0,
+          "stars": 1,
           "language": "CSS",
           "updated": "2026-11-06",
           "archived": false,
@@ -175,7 +175,7 @@
           "live": "",
           "stars": 0,
           "language": "",
-          "updated": "2026-01-14",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/userscript.js"
         }
@@ -199,8 +199,8 @@
           "desc": "一个轻量代理，用来处理跨域与转发",
           "live": "",
           "stars": 0,
-          "language": "",
-          "updated": "2024-07-01",
+          "language": "TypeScript",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/node-proxy"
         },
@@ -210,7 +210,7 @@
           "live": "",
           "stars": 2,
           "language": "JavaScript",
-          "updated": "2026-03-11",
+          "updated": "2026-11-26",
           "archived": false,
           "url": "https://github.com/nagisa-win/openclaw-uninstaller"
         }

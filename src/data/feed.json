@@ -1,17 +1,65 @@
 {
   "updated": [
     {
-      "repo": "gold-board",
-      "desc": "macOS 桌面浮窗：金价走势、唤醒定时器、触控板震动提醒",
-      "at": "2026-11-25",
-      "url": "https://github.com/nagisa-win/gold-board",
-      "language": "Swift",
-      "stars": 1
+      "repo": "openclaw-uninstaller",
+      "desc": "把 OpenClaw 从系统里彻底卸干净",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/openclaw-uninstaller",
+      "language": "JavaScript",
+      "stars": 2
+    },
+    {
+      "repo": "node-proxy",
+      "desc": "一个轻量代理，用来处理跨域与转发",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/node-proxy",
+      "language": "TypeScript",
+      "stars": 0
+    },
+    {
+      "repo": "userscript.js",
+      "desc": "原创或改造过的浏览器用户脚本",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/userscript.js",
+      "language": "",
+      "stars": 0
+    },
+    {
+      "repo": "Rime-Pro-Dict",
+      "desc": "自动生成 Rime 输入法的专业词库",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/Rime-Pro-Dict",
+      "language": "Vue",
+      "stars": 0
+    },
+    {
+      "repo": "better-coloros",
+      "desc": "ColorOS 的 LSPosed 插件合集：缺什么功能自己写",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/better-coloros",
+      "language": "Kotlin",
+      "stars": 0
+    },
+    {
+      "repo": "NB-Rename",
+      "desc": "跨平台批量重命名，类似 PowerToys 的 PowerRename",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/NB-Rename",
+      "language": "JavaScript",
+      "stars": 0
+    },
+    {
+      "repo": "cli-tools",
+      "desc": "留下来的命令行脚本集合，bash 与 Python",
+      "at": "2026-11-26",
+      "url": "https://github.com/nagisa-win/cli-tools",
+      "language": "Shell",
+      "stars": 3
     },
     {
       "repo": "web-router",
       "desc": "一个很小的客户端路由，零依赖",
-      "at": "2026-11-25",
+      "at": "2026-11-26",
       "url": "https://github.com/nagisa-win/web-router",
       "language": "JavaScript",
       "stars": 3
@@ -19,7 +67,7 @@
     {
       "repo": "advanced-js-calculator",
       "desc": "用 Jison 写的表达式计算器，解析过程可视化",
-      "at": "2026-11-25",
+      "at": "2026-11-26",
       "url": "https://github.com/nagisa-win/advanced-js-calculator",
       "language": "JavaScript",
       "stars": 0
@@ -27,95 +75,19 @@
     {
       "repo": "mermaid-render",
       "desc": "Mermaid 代码即时出图，支持导出 PNG / JPG",
-      "at": "2026-11-25",
+      "at": "2026-11-26",
       "url": "https://github.com/nagisa-win/mermaid-render",
       "language": "TypeScript",
       "stars": 1
-    },
-    {
-      "repo": "agent-relay",
-      "desc": "自托管的中转站：不同人的 agent 之间交换请求，由接收方本人审核",
-      "at": "2026-11-25",
-      "url": "https://github.com/nagisa-win/agent-relay",
-      "language": "Go",
-      "stars": 0
-    },
-    {
-      "repo": "skkill",
-      "desc": "给所有 agent 用的技能管理器，拿 package.json 当版本控制",
-      "at": "2026-11-25",
-      "url": "https://github.com/nagisa-win/skkill",
-      "language": "TypeScript",
-      "stars": 2
-    },
-    {
-      "repo": "mobile-photo-cleanup-kit",
-      "desc": "Web 优先的安卓照片去重与缩略图清理，走 ADB",
-      "at": "2026-11-17",
-      "url": "https://github.com/nagisa-win/mobile-photo-cleanup-kit",
-      "language": "Python",
-      "stars": 0
-    },
-    {
-      "repo": "dsh-animal-island-theme",
-      "desc": "DeepSeek Harness 的动物岛风格主题",
-      "at": "2026-11-06",
-      "url": "https://github.com/nagisa-win/dsh-animal-island-theme",
-      "language": "CSS",
-      "stars": 0
-    },
-    {
-      "repo": "better-coloros",
-      "desc": "ColorOS 的 LSPosed 插件合集：缺什么功能自己写",
-      "at": "2026-11-02",
-      "url": "https://github.com/nagisa-win/better-coloros",
-      "language": "Kotlin",
-      "stars": 0
-    },
-    {
-      "repo": "oppo-camera-normalization",
-      "desc": "把 OPPO 相机的输出文件名规范化",
-      "at": "2026-10-27",
-      "url": "https://github.com/nagisa-win/oppo-camera-normalization",
-      "language": "Kotlin",
-      "stars": 0
     }
   ],
   "releases": [
-    {
-      "repo": "gold-board",
-      "tag": "v1.0.1",
-      "name": "国内金价 v1.0.1",
-      "url": "https://github.com/nagisa-win/gold-board/releases/tag/v1.0.1",
-      "at": "2026-11-25"
-    },
-    {
-      "repo": "gold-board",
-      "tag": "v1.0.0",
-      "name": "国内金价 v1.0.0",
-      "url": "https://github.com/nagisa-win/gold-board/releases/tag/v1.0.0",
-      "at": "2026-11-24"
-    },
     {
       "repo": "better-coloros",
       "tag": "v1.1.0",
       "name": "Release v1.1.0",
       "url": "https://github.com/nagisa-win/better-coloros/releases/tag/v1.1.0",
       "at": "2026-11-02"
-    },
-    {
-      "repo": "oppo-camera-normalization",
-      "tag": "v1.0.0",
-      "name": "Release v1.0.0",
-      "url": "https://github.com/nagisa-win/oppo-camera-normalization/releases/tag/v1.0.0",
-      "at": "2026-10-27"
-    },
-    {
-      "repo": "oppo-camera-normalization",
-      "tag": "v1.0.1",
-      "name": "Release v1.0.1",
-      "url": "https://github.com/nagisa-win/oppo-camera-normalization/releases/tag/v1.0.1",
-      "at": "2026-10-27"
     },
     {
       "repo": "better-coloros",
@@ -130,6 +102,20 @@
       "name": "Release v1.0.1",
       "url": "https://github.com/nagisa-win/better-coloros/releases/tag/v1.0.1",
       "at": "2026-10-27"
+    },
+    {
+      "repo": "openclaw-uninstaller",
+      "tag": "v1.0.2",
+      "name": "🚀 Release v1.0.2",
+      "url": "https://github.com/nagisa-win/openclaw-uninstaller/releases/tag/v1.0.2",
+      "at": "2026-03-11"
+    },
+    {
+      "repo": "openclaw-uninstaller",
+      "tag": "v1.0.1",
+      "name": "🚀 Release v1.0.1",
+      "url": "https://github.com/nagisa-win/openclaw-uninstaller/releases/tag/v1.0.1",
+      "at": "2026-03-10"
     }
   ]
 }
