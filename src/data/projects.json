@@ -8,11 +8,11 @@
           "repo": "skkill",
           "desc": "给所有 agent 用的技能管理器，拿 package.json 当版本控制",
           "live": "https://skills.8o.nz/",
-          "stars": 2,
+          "stars": 3,
           "language": "TypeScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/skkill"
+          "url": "https://github.com/dev-nagisa/skkill"
         },
         {
           "repo": "agent-relay",
@@ -22,17 +22,17 @@
           "language": "Go",
           "updated": "2026-11-25",
           "archived": false,
-          "url": "https://github.com/nagisa-win/agent-relay"
+          "url": "https://github.com/dev-nagisa/agent-relay"
         },
         {
           "repo": "fanzha-skill",
           "desc": "反诈技能包：给 agent 的防骗知识库与判断流程",
           "live": "",
-          "stars": 3,
+          "stars": 4,
           "language": "Shell",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/fanzha-skill"
+          "url": "https://github.com/dev-nagisa/fanzha-skill"
         }
       ]
     },
@@ -47,7 +47,7 @@
           "language": "TypeScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/mermaid-render"
+          "url": "https://github.com/dev-nagisa/mermaid-render"
         },
         {
           "repo": "advanced-js-calculator",
@@ -57,7 +57,7 @@
           "language": "JavaScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/advanced-js-calculator"
+          "url": "https://github.com/dev-nagisa/advanced-js-calculator"
         },
         {
           "repo": "web-router",
@@ -67,7 +67,7 @@
           "language": "JavaScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/web-router"
+          "url": "https://github.com/dev-nagisa/web-router"
         },
         {
           "repo": "cli-tools",
@@ -77,7 +77,7 @@
           "language": "Shell",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/cli-tools"
+          "url": "https://github.com/dev-nagisa/cli-tools"
         },
         {
           "repo": "NB-Rename",
@@ -87,7 +87,7 @@
           "language": "JavaScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/NB-Rename"
+          "url": "https://github.com/dev-nagisa/NB-Rename"
         },
         {
           "repo": "algo-ts",
@@ -97,7 +97,7 @@
           "language": "TypeScript",
           "updated": "2024-11-10",
           "archived": false,
-          "url": "https://github.com/nagisa-win/algo-ts"
+          "url": "https://github.com/dev-nagisa/algo-ts"
         }
       ]
     },
@@ -108,11 +108,11 @@
           "repo": "gold-board",
           "desc": "macOS 桌面浮窗：金价走势、唤醒定时器、触控板震动提醒",
           "live": "",
-          "stars": 1,
+          "stars": 2,
           "language": "Swift",
-          "updated": "2026-11-25",
+          "updated": "2026-11-27",
           "archived": false,
-          "url": "https://github.com/nagisa-win/gold-board"
+          "url": "https://github.com/dev-nagisa/gold-board"
         },
         {
           "repo": "mobile-photo-cleanup-kit",
@@ -122,17 +122,17 @@
           "language": "Python",
           "updated": "2026-11-17",
           "archived": false,
-          "url": "https://github.com/nagisa-win/mobile-photo-cleanup-kit"
+          "url": "https://github.com/dev-nagisa/mobile-photo-cleanup-kit"
         },
         {
           "repo": "better-coloros",
           "desc": "ColorOS 的 LSPosed 插件合集：缺什么功能自己写",
           "live": "",
-          "stars": 0,
+          "stars": 1,
           "language": "Kotlin",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/better-coloros"
+          "url": "https://github.com/dev-nagisa/better-coloros"
         },
         {
           "repo": "oppo-camera-normalization",
@@ -142,7 +142,7 @@
           "language": "Kotlin",
           "updated": "2026-10-27",
           "archived": false,
-          "url": "https://github.com/nagisa-win/oppo-camera-normalization"
+          "url": "https://github.com/dev-nagisa/oppo-camera-normalization"
         }
       ]
     },
@@ -157,7 +157,7 @@
           "language": "Vue",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/Rime-Pro-Dict"
+          "url": "https://github.com/dev-nagisa/Rime-Pro-Dict"
         },
         {
           "repo": "dsh-animal-island-theme",
@@ -167,7 +167,7 @@
           "language": "CSS",
           "updated": "2026-11-06",
           "archived": false,
-          "url": "https://github.com/nagisa-win/dsh-animal-island-theme"
+          "url": "https://github.com/dev-nagisa/dsh-animal-island-theme"
         },
         {
           "repo": "userscript.js",
@@ -177,7 +177,7 @@
           "language": "",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/userscript.js"
+          "url": "https://github.com/dev-nagisa/userscript.js"
         }
       ]
     },
@@ -192,7 +192,7 @@
           "language": "JavaScript",
           "updated": "2025-12-05",
           "archived": false,
-          "url": "https://github.com/nagisa-win/webhook"
+          "url": "https://github.com/dev-nagisa/webhook"
         },
         {
           "repo": "node-proxy",
@@ -202,7 +202,7 @@
           "language": "TypeScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/node-proxy"
+          "url": "https://github.com/dev-nagisa/node-proxy"
         },
         {
           "repo": "openclaw-uninstaller",
@@ -212,7 +212,7 @@
           "language": "JavaScript",
           "updated": "2026-11-26",
           "archived": false,
-          "url": "https://github.com/nagisa-win/openclaw-uninstaller"
+          "url": "https://github.com/dev-nagisa/openclaw-uninstaller"
         }
       ]
     }
